@@ -4,6 +4,6 @@ namespace AreaCalculation.Data.Csv.Mappers
 {
     public interface ICsvPropertyMapper
     {
-        Property Map(string line);
+        IProperty Map(string line);
     }
 }

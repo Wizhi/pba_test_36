@@ -1,10 +1,18 @@
 using AreaCalculation.Domain;
+using AreaCalculation.Domain.Factories;
 
 namespace AreaCalculation.Data.Csv.Mappers
 {
     public class CsvPropertyMapper : ICsvPropertyMapper
     {
-        public Property Map(string line)
+        private readonly IPropertyFactory _propertyFactory;
+
+        public CsvPropertyMapper(IPropertyFactory propertyFactory)
+        {
+            _propertyFactory = propertyFactory;
+        }
+
+        public IProperty Map(string line)
         {
             // Assume line is csv
             var parts = line.Split(',');
@@ -24,7 +32,7 @@ namespace AreaCalculation.Data.Csv.Mappers
                 // TODO: handle invalid or missing data
             }
             
-            return new Property(propertyNumber, propertySquareMeters, propertyRooms);
+            return _propertyFactory.Create(propertyNumber, propertySquareMeters, propertyRooms);
         }
 
         private string RemoveQuotes(string item)

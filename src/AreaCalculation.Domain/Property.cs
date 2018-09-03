@@ -1,6 +1,6 @@
 ﻿namespace AreaCalculation.Domain
 {
-    public class Property
+    internal class Property : IProperty
     {
         public Property(int number, double squareMeters, double rooms)
         {

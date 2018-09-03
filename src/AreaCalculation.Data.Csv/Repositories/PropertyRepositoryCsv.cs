@@ -20,7 +20,7 @@ namespace AreaCalculation.Data.Csv.Repositories
             _csvPropertyMapper = csvPropertyMapper;
         }
 
-        public ICollection<Property> GetAll()
+        public ICollection<IProperty> GetAll()
         {
             // Assume path exists
             return _fileSystem
