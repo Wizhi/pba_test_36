@@ -1,6 +1,6 @@
 using AreaCalculation.Domain;
 
-namespace AreaCalculation.Data.Csv
+namespace AreaCalculation.Data.Csv.Mappers
 {
     public class CsvPropertyMapper : ICsvPropertyMapper
     {

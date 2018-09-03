@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO.Abstractions;
 using System.Linq;
+using AreaCalculation.Data.Csv.Mappers;
 using AreaCalculation.Domain;
+using AreaCalculation.Domain.Repositories;
 
-namespace AreaCalculation.Data.Csv
+namespace AreaCalculation.Data.Csv.Repositories
 {
     public class PropertyRepositoryCsv : IPropertyRepository
     {

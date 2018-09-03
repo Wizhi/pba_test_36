@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AreaCalculation.Domain
+namespace AreaCalculation.Domain.Repositories
 {
     public interface IPropertyRepository
     {
