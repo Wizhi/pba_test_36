@@ -21,17 +21,17 @@ namespace AreaCalculation.Data.Csv.Mappers
             {
                 // TODO: handle invalid or missing data
             }
-            
+
             if (!double.TryParse(RemoveQuotes(parts[1]), out var propertySquareMeters))
             {
                 // TODO: handle invalid or missing data
             }
-            
+
             if (!double.TryParse(RemoveQuotes(parts[2]), out var propertyRooms))
             {
                 // TODO: handle invalid or missing data
             }
-            
+
             return _propertyFactory.Create(propertyNumber, propertySquareMeters, propertyRooms);
         }
 

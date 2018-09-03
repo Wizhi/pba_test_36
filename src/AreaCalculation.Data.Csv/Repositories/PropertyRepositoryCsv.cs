@@ -10,8 +10,8 @@ namespace AreaCalculation.Data.Csv.Repositories
     public class PropertyRepositoryCsv : IPropertyRepository
     {
         private readonly string _csvPath;
-        private readonly IFileSystem _fileSystem;
         private readonly ICsvPropertyMapper _csvPropertyMapper;
+        private readonly IFileSystem _fileSystem;
 
         public PropertyRepositoryCsv(string csvPath, IFileSystem fileSystem, ICsvPropertyMapper csvPropertyMapper)
         {

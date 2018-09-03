@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using AreaCalculation.Domain;
 using AreaCalculation.Domain.Repositories;
 
 namespace AreaCalculation
