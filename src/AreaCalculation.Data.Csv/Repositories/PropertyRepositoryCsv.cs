@@ -22,7 +22,7 @@ namespace AreaCalculation.Data.Csv.Repositories
 
         public ICollection<Property> GetAll()
         {
-            // Assume Path exists
+            // Assume path exists
             return _fileSystem
                 .File
                 .ReadAllLines(_csvPath)

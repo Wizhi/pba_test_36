@@ -6,6 +6,7 @@ namespace AreaCalculation.Data.Csv.Mappers
     {
         public Property Map(string line)
         {
+            // Assume line is csv
             var parts = line.Split(',');
 
             if (!int.TryParse(RemoveQuotes(parts[0]), out var propertyNumber))
